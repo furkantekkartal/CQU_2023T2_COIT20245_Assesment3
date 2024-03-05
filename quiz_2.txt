@@ -1,0 +1,26 @@
+3
+
+QS
+Q1. Which one is a number? 
+a. 5
+b. A
+c. ?
+d. Space
+QE
+AS
+a
+AE
+
+QS
+Q2. 5 is a number. (True or False) 
+QE
+AS
+True
+AE
+
+QS
+Q3. 5 is a ----.  
+QE
+AS
+Number
+AE

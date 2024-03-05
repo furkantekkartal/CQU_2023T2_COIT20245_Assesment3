@@ -1,0 +1,234 @@
+10
+
+QS
+Q1. Operators as ==, !=, &&, and || are mathematical operators forbasic evaluations (True or False).
+QE
+AS
+False
+AE
+
+QS
+
+ public class Increment {
+     public static void main(String[] args) {
+         int a = 5;
+         int b = 3;
+         System.out.println("The value of result is: " + (a++ + --b));
+     }
+ }
+
+Q2. After the code runs, what will be the value of the result?
+
+A) 2
+B) 7
+C) 8
+D) 15
+QE
+AS
+B
+AE
+
+QS
+
+ public class SwitchChallenge {
+     public static void main(String[] args) {
+         int number = 3;
+         String result = "";
+         switch (number) {
+             case 1:
+             case 2:
+                 result += "A";
+                 break;
+             case 3:
+                 result += "B";
+             case 4:
+             case 5:
+                 result += "C";
+                 break;
+             default:
+                 result += "D";
+         }
+         System.out.println("Result: " + result);
+     }
+ }
+
+Q3. What will be the output of this code, and why does it produce this output?
+
+A) The output will be "Result: B" because number matches case 3.
+B) The output will be "Result: BCD" because number matches case 3 and continues executing subsequent
+cases.
+C) The output will be "Result: BC" because number matches case 3 and continues executing subsequent
+cases until break statement.
+D) The output will be "Result: BD" because number matches case 3 and continues executing subsequent 
+cases with default case.
+QE
+AS
+C
+AE
+
+QS
+Q4. What is the key difference between "primitive types" and "reference types" in Java?
+
+A) Primitive types include objects like arrays and strings, while reference types are basic data types
+like integers and floats.
+B) Primitive types are immutable, while reference types are mutable.
+C) Primitive types represent simple data values, while reference types represent objects and allow 
+complex data structures.
+D) Primitive types can be used as class attributes, while reference types cannot.
+QE
+AS
+C
+AE
+
+QS
+
+ public class Calculator {
+    public int add(int x, int y) {
+        return x + y;
+    }
+    public double add(double a, double b) {
+        return a + b;
+    }
+    public void displayResults(int result1, int result2) {
+       System.out.println("The results are: " + result1 + " and " + result2);
+    }
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        int intResult = calculator.add(5, 3);
+        double doubleResult = calculator.add(2.5, 3.7);
+        calculator.displayResults(intResult, (int) doubleResult);
+    }
+}
+
+Q5. What will be the output of this code?
+
+A) The results are: 8 and 6.0
+B) The results are: 8 and 6
+C) The results are: 8 and 6 and 6.0
+D) The code will not compile due to a type mismatch error.
+QE
+AS
+B
+AE
+
+QS
+
+ public class ArrayChallenge {
+     public static void main(String[] args) {
+         int[] numbers = {15, 10, 5, 20, 25};
+         int result = 0;
+         for (int i = 1; i < numbers.length; i++) {
+             if (i % 2 == 0) {
+                 result += numbers[i];
+             } else {
+                 result -= numbers[i];
+             }
+         }
+         System.out.println("Result: " + result);
+     }
+ }
+
+Q6. What will be the output of this code?
+
+A) Result: 5
+B) Result: 15
+C) Result: 0
+D) Result: -15
+QE
+AS
+C
+AE
+
+QS
+
+ public class SortingExample {
+      public static void main(String[] args) {
+         int[] numbers = {5, 2, 9, 1, 5, 6};
+         
+	// Sorting algorithm implementation here
+
+         for (int num : numbers) {
+             System.out.print(num + " ");
+         }
+   }
+ }
+
+Q7. Consider the following Java code that sorts an array using a specific sorting algorithm. Which 
+sorting algorithm is not suitable for this code?
+
+A) Selection Sort, Expected Time Complexity: O(n^2)
+B) Merge Sort, Expected Time Complexity: O(n log n)
+C) Quick Sort, Expected Time Complexity: O(n)
+D) Insertion Sort, Expected Time Complexity: O(n^2)
+QE
+AS
+C
+AE
+
+QS
+
+ public class ForExample {
+     public static void main(String[] args) {
+         int[] numbers = {11, 20, 27, 16, 9};
+         int sum = 0;
+ 
+         // Insert your code here 
+ 
+             if (x % 3 == 0) {
+                 sum += x;
+             }
+         }
+ 
+         System.out.println("Sum of numbers divisible by 3: " + sum);
+     }
+ }
+
+
+Q8. What code should be inserted in the comment section to correctly calculate the sum of numbers in 
+the numbers array that are divisible by 3 using the enhanced for statement?
+
+A) for (int x : numbers) {
+B) for (int x : numbers : x++) {
+C) for (int x = 0; x <= numbers.length; ++x) {
+D) for (int x = 0; x <= numbers.length; x++) { 
+
+QE
+AS
+A
+AE
+
+QS
+Q9. Character-based input and output can be performed with classes Scanner and _______. Which class is
+commonly used for reading data from the keyboard?
+QE
+AS
+Formatter
+AE
+
+QS
+
+ public class StringBuilderExample {
+     public static void main(String[] args) {
+         StringBuilder strBuilder = new StringBuilder("Hello, World!");
+         
+         strBuilder.replace(5, 7, "-");
+         strBuilder.deleteCharAt(5);
+         strBuilder.append(" How are you?");
+         strBuilder.insert(5, " ");
+         strBuilder.delete(0, 6);
+         strBuilder.replace(7, 10, "Who");
+ 
+         System.out.println(strBuilder.toString());
+     }
+ }
+
+Q10. What will be the output of this code?
+
+A) Hello-World! How are you Who?
+B) Hello World! Who are you?
+C) Who World! How are you?
+D) World! Who are you?
+QE
+AS
+D
+AE
